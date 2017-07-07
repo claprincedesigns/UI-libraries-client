@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!--  Meta  -->
+  <meta charset="UTF-8" />
+  <title>My New Pen!</title>
+
+  <!--  Styles  -->
+  <link rel="stylesheet" href="styles/index.processed.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+  <section id="column1">
+    <div class="button">
+      <a href="#" target="_self" class="btn btn-slant-blue">
+    Primary Button 
+    <div class="btn-blue-slant">
+        <i class="fa fa-caret-right"></i>
+    </div>
+</a>
+    </div>
+
+    <div class="button">
+      <a href="#" target="_self" class="btn btn-slant-grey">
+    Secondary Button 
+    <div class="btn-grey-slant">
+        <i class="fa fa-caret-right"></i>
+    </div>
+</a>
+    </div>
+
+    <div class="button">
+      <a href="#" target="_self" class="btn btn-ghost-blue">
+    Button label 
+    <div class="btn-slant">
+        <i class="fa fa-caret-right"></i>
+    </div>
+</a>
+    </div>
+  </section>
+  <section id="column2">
+    <div class="toggle-buttons">
+      <div class="filter-checkbox" data-ng show="!searchText.length">
+        <span class="filter-checkbox__item" data-ng-click="setMonth(m.name)" data-ng-repeat="m in months" data-ng-class="{'category-none-selected': !isCheckedMonth(m.name), 'category-selected': isCheckedMonth(m.name), 'category-disabled': (m.count == 0)}">Filter</span>
+        <span class="filter-checkbox__item" data-ng-click="setMonth(m.name)" data-ng-repeat="m in months" data-ng-class="{'category-none-selected': !isCheckedMonth(m.name), 'category-selected': isCheckedMonth(m.name), 'category-disabled': (m.count == 0)}">Filter</span>
+        <span class="filter-checkbox__item" data-ng-click="setMonth(m.name)" data-ng-repeat="m in months" data-ng-class="{'category-none-selected': !isCheckedMonth(m.name), 'category-selected': isCheckedMonth(m.name), 'category-disabled': (m.count == 0)}">Filter</span>
+        <span class="filter-checkbox__item" data-ng-click="setMonth(m.name)" data-ng-repeat="m in months" data-ng-class="{'category-none-selected': !isCheckedMonth(m.name), 'category-selected': isCheckedMonth(m.name), 'category-disabled': (m.count == 0)}">Filter</span>
+        <span class="filter-checkbox__item" data-ng-click="setMonth(m.name)" data-ng-repeat="m in months" data-ng-class="{'category-none-selected': !isCheckedMonth(m.name), 'category-selected': isCheckedMonth(m.name), 'category-disabled': (m.count == 0)}">Filter</span>
+      </div>
+    </div>
+    <div id="background">
+      <div class="checkbox">
+
+        <input type="checkbox" id="checkbox1">
+        <label for="checkbox1"><span>Checkbox</span></label>
+
+      </div>
+    </div>
+    <form id="radio-button">
+      <input type="radio" name="radio-group" id="first-choice" value="First Choice" />
+      <label for="first-choice">First Choice</label>
+      <br/>
+      <input type="radio" name="radio-group" id="second-choice" value="Second Choice" />
+      <label for="second-choice">Second Choice</label>
+      <br/>
+      <input type="radio" name="radio-group" id="third-choice" value="Third Choice" />
+      <label for="third-choice">Third Choice</label>
+    </form>
+  </section>
+  <!-- Scripts -->
+  <script src="scripts/index.js"></script>
+</body>
+
+</html>
